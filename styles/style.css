@@ -11,7 +11,15 @@ body #wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 header {
@@ -19,9 +27,24 @@ header {
   color: #F2F0E9;
 }
 
+button {
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px;
+  color: #7D6D8C;
+  border-radius: 30px;
+}
+
 footer {
-  margin-top: 0;
   background-color: #7D6D8C;
   color: #F2F0E9;
+  width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer small {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

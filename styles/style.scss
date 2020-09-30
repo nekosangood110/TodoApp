@@ -8,12 +8,18 @@ $accentclr2: #7A7474;
 body {
     font-family: "Roboto", "Noto Sans JP", sans-serif;
     background-color: #F2F0E9;
+    
 
     #wrapper {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        justify-content: space-between;
+
     }
+}
+
+main {
+    flex: 1;
 }
 
 header {
@@ -21,12 +27,24 @@ header {
     color: $baseclr;
 }
 
+button {
+    display: inline-block;
+    text-align: center;
+    padding:  0 10px;
+    color: $mainclr;
+    border-radius: 30px;
+
+}
 footer {
-    margin-top: 0;
     background-color: $mainclr;
     color: $baseclr;
-}
+    width: 100%;
+    align-items: flex-end;
 
+    small {
+        text-align: center;
+    }
+}
 @media screen and (max-width: 600px) {}
 
 

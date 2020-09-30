@@ -8,13 +8,11 @@ $accentclr2: #7A7474;
 body {
     font-family: "Roboto", "Noto Sans JP", sans-serif;
     background-color: #F2F0E9;
-    
 
     #wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
     }
 }
 
@@ -30,11 +28,11 @@ header {
 button {
     display: inline-block;
     text-align: center;
-    padding:  0 10px;
+    padding: 0 10px;
     color: $mainclr;
     border-radius: 30px;
-
 }
+
 footer {
     background-color: $mainclr;
     color: $baseclr;
@@ -45,6 +43,7 @@ footer {
         text-align: center;
     }
 }
+
 @media screen and (max-width: 600px) {}
 
 

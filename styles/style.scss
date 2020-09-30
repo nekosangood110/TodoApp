@@ -5,20 +5,29 @@ $mainclr: #7D6D8C;
 $accentclr1: #F2B3B3;
 $accentclr2: #7A7474;
 
-body{
+body {
     font-family: "Roboto", "Noto Sans JP", sans-serif;
     background-color: #F2F0E9;
+
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 }
+
 header {
     background-color: $mainclr;
     color: $baseclr;
 }
 
-@media screen and (max-width: 600px) {
-     
+footer {
+    margin-top: 0;
+    background-color: $mainclr;
+    color: $baseclr;
 }
 
+@media screen and (max-width: 600px) {}
 
-@media screen and (min-width: 900px) {
-     
- }
+
+@media screen and (min-width: 900px) {}

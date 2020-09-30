@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+$baseclr: #F2F0E9;
+$mainclr: #7D6D8C;
+$accentclr1: #F2B3B3;
+$accentclr2: #7A7474;
+
+body{
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
+    background-color: #F2F0E9;
+}
+header {
+    background-color: $mainclr;
+    color: $baseclr;
+}
+
+@media screen and (max-width: 600px) {
+     
+}
+
+
+@media screen and (min-width: 900px) {
+     
+ }

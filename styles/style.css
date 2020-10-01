@@ -1,50 +1,82 @@
 body {
   font-family: "Roboto", "Noto Sans JP", sans-serif;
   background-color: #F2F0E9;
-}
-
-body #wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header {
-  background-color: #7D6D8C;
+  background: -webkit-gradient(linear, left top, right top, from(#7D6D8C), to(#F2B3B3));
+  background: linear-gradient(to right, #7D6D8C, #F2B3B3);
   color: #F2F0E9;
+  padding: 5px 0;
+  text-align: center;
 }
 
-button {
+input[type="checkbox"] {
+  margin: 40px 0  0 30px;
+}
+
+input[type="text"] {
+  margin: 2px 0 0 30px;
+}
+
+input[type="text"]:focus {
+  border: 2px solid #7A7474;
+  outline: 0;
+}
+
+.donestyle {
+  text-decoration: line-through;
+  color: #7A7474;
+}
+
+.count p {
+  font-size: 17px;
+  position: absolute;
+  bottom: 110px;
+  margin: 0 0 10px 20px;
+}
+
+.clear-btn {
   display: inline-block;
   text-align: center;
-  padding: 0 10px;
   color: #7D6D8C;
-  border-radius: 30px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 70px;
+  padding: 0 10px;
+  margin: 0 0 10px 10px;
+  -webkit-box-shadow: 2px 2px;
+          box-shadow: 2px 2px;
+}
+
+.all-btn {
+  display: inline-block;
+  text-align: center;
+  color: #7D6D8C;
+  border-radius: 4px;
+  position: absolute;
+  padding: 0 18px;
+  bottom: 80px;
+  margin-left: 80px;
+  -webkit-box-shadow: 2px 2px;
+          box-shadow: 2px 2px;
 }
 
 footer {
-  background-color: #7D6D8C;
+  background: -webkit-gradient(linear, left top, right top, from(#7D6D8C), to(#F2B3B3));
+  background: linear-gradient(to right, #7D6D8C, #F2B3B3);
   color: #F2F0E9;
   width: 100%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-footer small {
+  margin-top: auto;
   text-align: center;
+  padding: 12px 0;
 }
 /*# sourceMappingURL=style.css.map */

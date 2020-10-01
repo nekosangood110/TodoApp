@@ -7,43 +7,106 @@ $accentclr2: #7A7474;
 
 body {
     font-family: "Roboto", "Noto Sans JP", sans-serif;
-    background-color: #F2F0E9;
-    
-
-    #wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-    }
-}
-
-main {
-    flex: 1;
+    background-color: $baseclr;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
 }
 
 header {
-    background-color: $mainclr;
+    background: linear-gradient(to right, $mainclr, $accentclr1);
     color: $baseclr;
+    padding: 5px 0;
+    text-align: center;
+    
 }
 
-button {
+input[type="checkbox"] {
+    margin: 40px 0  0 30px;
+}
+input[type="text"] {
+    margin: 2px 0 0 30px;
+
+}
+input[type="text"]:focus {
+    border: 2px solid $accentclr2;
+    outline: 0;
+
+}
+
+.donestyle {
+    text-decoration: line-through;
+    color: $accentclr2;
+}
+// input[type="checkbox"] {
+//     opacity: 0;
+//     appearance: none;
+//     position: absolute;
+// }
+// input[type="checkbox"]+ span::before {
+//     display: inline-block;
+//     content: '';
+//     width: 1rem;
+//     height: 1rem;
+//     border: 1px solid $accentclr2;
+//     border-radius: 10px;
+//     text-align: right;
+// }
+// input[type="checkbox"]:checked + span::before {
+//     background-image: url(images/check.svg);
+//     background-repeat: no-repeat;
+//     // background-position: 0 2px;
+
+// }
+// svg {
+//     background-position: 0 0 100px 0;
+// }
+// input[type="checkbox"]:focus + span::before {
+//     border-color: $mainclr;
+//   }
+
+.count p {
+    font-size: 17px;
+    position: absolute;
+    bottom: 110px;
+    margin: 0 0 10px 20px;
+
+}
+
+.clear-btn {
     display: inline-block;
     text-align: center;
-    padding:  0 10px;
     color: $mainclr;
-    border-radius: 30px;
-
+    border-radius: 4px;
+    position: absolute;
+    bottom: 70px;
+    padding: 0 10px;
+    margin: 0 0 10px 10px; 
+    box-shadow: 2px 2px;
+    
 }
+.all-btn {
+    display: inline-block;
+    text-align: center;
+    color: $mainclr;
+    border-radius: 4px;
+    position: absolute;
+    padding: 0 18px;
+    bottom: 80px;
+    margin-left: 80px;
+    box-shadow: 2px 2px;
+ 
+    
+}
+
 footer {
-    background-color: $mainclr;
+    background: linear-gradient(to right, $mainclr, $accentclr1);
     color: $baseclr;
     width: 100%;
-    align-items: flex-end;
+    margin-top: auto;
+    text-align: center;
+    padding: 12px 0;
 
-    small {
-        text-align: center;
-    }
 }
 @media screen and (max-width: 600px) {}
 

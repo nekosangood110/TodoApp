@@ -65,23 +65,6 @@ input[type="text"] {
     }
 }
 
-.all-btn {
-    display: inline-block;
-    text-align: center;
-    color: $mainclr;
-    box-shadow: 2px 2px;
-    border-radius: 4px;
-    padding: 0 18px;
-    margin: 15px 0 10px 10px;
-    
-
-    &:active {
-        transform: translate(1px,1px);
-        box-shadow: none;
-    }
-
-}
-
 footer {
     background: linear-gradient(to right, $mainclr, $accentclr1);
     color: $baseclr;

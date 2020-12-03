@@ -5,16 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vue.js TodoApp</title>
+  <!-- Googlefont CDN -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto&display=swap"
     rel="stylesheet" />
+    <!-- reboot CSS -->
   <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
   <link rel="stylesheet" href="styles/style.css" />
+  <!-- fontawesome CDN -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- Vue CDN -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
   <header>
-    <h1>My Tasks</h1>
+    <h1><i class="far fa-calendar-check"></i>&nbsp;My Tasks</h1>
   </header>
   <div id="app">
     <div v-for="todo in todos">
@@ -30,7 +35,6 @@
         <!-- ↑3/1の部分 -->
     </div>
     <button class="clear-btn" v-on:click="cleanToDo">Clear</button>
-    <button class="all-btn">All</button>
   </div>
   <footer>
     <small>&copy;2020 chika</small>
